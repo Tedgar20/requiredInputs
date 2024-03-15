@@ -1,4 +1,4 @@
-import { Component, afterNextRender, input, signal } from '@angular/core';
+import { Component, afterNextRender, afterRender, input, signal } from '@angular/core';
 
 @Component({
   selector: 'app-test',

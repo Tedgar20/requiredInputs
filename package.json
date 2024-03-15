@@ -6,9 +6,7 @@
     "start": "ng serve",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
-    "test": "ng jest",
-    "test:watch": "jest --watch",
-    "test:coverage": "jest --coverage",
+    "test": "jest",
     "serve:ssr:requiredInputs": "node dist/required-inputs/server/server.mjs"
   },
   "private": true,

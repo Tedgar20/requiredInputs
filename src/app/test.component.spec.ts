@@ -20,7 +20,7 @@ describe('TestComponent', () => {
   it('should contain a name', () => {
     expect(component.name()).toEqual('edgar');
   });
-  //This test fails
+  // This test fails when using afterNextRender
   it('should update the count to 1', () => {
     expect(component.count()).toEqual(1);
   });
