@@ -1,13 +1,14 @@
-import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { Component, input } from '@angular/core';
+import { TestComponent } from './test.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet],
-  templateUrl: './app.component.html',
-  styleUrl: './app.component.css'
+  imports: [TestComponent],
+  template: `
+    <app-test [name]="name"></app-test>
+  `,
 })
 export class AppComponent {
-  title = 'requiredInputs';
+  name = 'edgar';
 }
